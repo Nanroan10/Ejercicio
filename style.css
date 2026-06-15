@@ -1,0 +1,63 @@
+/* ===========================
+   Tema azul (por defecto)
+   =========================== */
+body {
+  background: linear-gradient(to right, #d5d2ff, #7375fd, #1a00ac);
+  color: #02007e;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
+.form-container {
+  background-color: #f89232;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  color: #02007e;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #0321a8;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #007e26;
+}
+
+/* ===========================
+   Tema accesible (daltonismo)
+   =========================== */
+body.daltonismo {
+  background: linear-gradient(to right, #f0f0f0, #d9d9d9);
+  color: #000;
+}
+
+body.daltonismo .form-container {
+  background-color: #ffffff;
+  border: 2px solid #000;
+}
+
+body.daltonismo .form-container h2 {
+  color: #000;
+}
+
+body.daltonismo .btn-primary {
+  background-color: #ff9900; /* naranja fuerte */
+  color: #000;
+}
+
+body.daltonismo .btn-primary:hover {
+  background-color: #cc6600;
+}
+
+body.daltonismo label {
+  color: #000;
+}
