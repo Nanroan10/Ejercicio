@@ -47,12 +47,23 @@ footer {
   padding: 1rem;
 }
 
-/* Media Query para pantallas pequeñas */
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
+/* Imagen responsiva */
+.imagen-responsiva img {
+  width: 400px; /* tamaño normal */
+  display: block;
+  margin: 20px auto;
+}
+
+/* Cuando la pantalla es menor a 800px → imagen más pequeña */
+@media (max-width: 800px) {
+  .imagen-responsiva img {
+    width: 200px;
   }
-  .caja {
-    flex: 1 1 100%;
+}
+
+/* Cuando la pantalla es menor a 600px → imagen desaparece */
+@media (max-width: 600px) {
+  .imagen-responsiva img {
+    display: none;
   }
 }
